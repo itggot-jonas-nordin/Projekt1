@@ -4,12 +4,14 @@
 		margin: 0;
 		padding: 0;
 	}
+
 	.container {
 		width: 100vw;
 		height: 150vh;
 		grid-template-columns: repeat(5, 1fr);
 		grid-template-rows: repeat(18, 1fr);
 		display: grid;
+		font-family: 'Lato', sans-serif;
 	}
 
 	header {
@@ -27,6 +29,7 @@
 		grid-column: span 2;
 		grid-row: span 1;
 		width: 35vw;
+		cursor: pointer;
 	}
 
 	.material-icons.profile {
@@ -35,12 +38,14 @@
 		justify-self: right;
 		margin-top: auto;
 		margin-bottom: auto;
+		cursor: pointer;
 	}
 
 	.material-icons.menu-icon {
 		grid-column: span 1;
 		margin: auto;
 		font-size: 12vw;
+		cursor: pointer;
 	}
 
 	.menu {
@@ -49,7 +54,6 @@
 		margin-left: 40vw;
 		display: none;
 		position: fixed;
-
 	}
 
 	.menu-items {
@@ -65,6 +69,7 @@
 		grid-row: span 1;
 		margin: auto;
 		font-size: 10vw;
+		cursor: pointer;
 	}
 
 	
@@ -74,18 +79,47 @@
 
 	main {
 		grid-column: 1/6;
-		grid-row: 2/19;
+		grid-row: 1/19;
 		background-color: blue;
 	}
 
 	.fade-main {
-		background-color: black;
+		background-color: rgb(100,100,100);
 
 	}
+	
 
-	.show-menu:active {
-		transition: 1s;
+	.choices {
+		grid-column: span 4;
+		grid-row: 2/10;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		grid-row-gap: 4vw;
 	}
+
+
+	.choices > li {
+		text-decoration: none;
+		font-size: 130%;
+		grid-column: span 3;
+		grid-row: span 1;
+		list-style-type: none;
+	}
+
+	.choices > li > a:visited {
+		color: black;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	
+
+
+
 
 /*
 	@keyframes menu-slide{
