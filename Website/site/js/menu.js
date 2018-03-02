@@ -3,6 +3,6 @@ function toggleMenu(){
     element.classList.toggle("show-menu");
 
     element = document.querySelector("main");
-    element.classList.toggle("fade-main")
+    element.classList.toggle("fade-main");
 }
 
