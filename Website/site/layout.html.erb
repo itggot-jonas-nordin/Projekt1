@@ -17,17 +17,17 @@
 <body>
 	<div class="container">
 		<header>
-			<img src="img/logo_main.png" alt="GymSenior" class="logo-header">
-			<i class="material-icons profile">account_circle</i>
+			<a href="index.html" class="logo-header-link"><img src="img/logo_main.png" alt="GymSenior" class="logo-header"></a>
+			<a href="login.html" class="profile-link"><i class="material-icons profile">account_circle</i></a>
 			<i class="material-icons menu-icon" onclick="toggleMenu()">menu</i>
 			<div class="menu">
 				<div class="menu-items">
 					<i class="material-icons right-arrow" onclick="toggleMenu()">keyboard_arrow_right</i>
 					<ul class="choices">
-						<li><a href="">Logga in</a></li>
+						<li><a href="index.html">Hem</a></li>
+						<li><a href="login.html">Logga in</a></li>
 						<li><a href="">Träna</a></li>
 						<li><a href="">Priser</a></li>
-						<li><a href="">Boka pass</a></li>
 						<li><a href="">Kontakta oss</a></li>
 						<li><a href="">Om oss</a></li>
 					</ul>
@@ -36,14 +36,12 @@
 		</header>
 
 		<main>
-			<div class="banner">
-				<img src="img/bcg.png" alt="" class="banner_img">
-				<h1 class="banner_text">Börja träna hos oss idag!</h1>
-				<button class="banner_button">Bli medlem!</button>
-			</div>
-
-
+			<%= yield %>
 		</main>
+
+		<footer>
+			
+		</footer>
 
 	</div>
 	 <script src="js/menu.js"></script>

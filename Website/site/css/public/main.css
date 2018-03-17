@@ -58,12 +58,10 @@
 		position: absolute;
 		right: 0;	
 		margin-top: 8.5vh;
-		margin-left: 100vw;
 		width: 0;
-		opacity: 0;
-		display: block;
+		display: none;
 		position: fixed;
-		transition: 0.7s;
+		transition: 0.5s width;
 	}
 
 	.menu-items {
@@ -85,10 +83,9 @@
 
 	
 	.show-menu {
-		margin-left: 0;
 		width: 60vw;
-		opacity: 1;
-		transition: ease-out 0.7s;
+		display: block;
+		transition: 0.5s width;
 	}
 
 	main {
